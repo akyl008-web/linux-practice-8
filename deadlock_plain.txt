@@ -1,0 +1,20 @@
+Режим: plain
+T1: захватил lock_a, жду lock_b
+T2: захватил lock_b, жду lock_a
+Timeout (0:00:03)!
+Thread 0x0000f475125df160 [T2] (most recent call first):
+  File "/home/student1/linux-practice-8/deadlock.py", line 25 in worker
+  File "/usr/lib/python3.14/threading.py", line 1024 in run
+  File "/usr/lib/python3.14/threading.py", line 1082 in _bootstrap_inner
+  File "/usr/lib/python3.14/threading.py", line 1044 in _bootstrap
+
+Thread 0x0000f47512def160 [T1] (most recent call first):
+  File "/home/student1/linux-practice-8/deadlock.py", line 25 in worker
+  File "/usr/lib/python3.14/threading.py", line 1024 in run
+  File "/usr/lib/python3.14/threading.py", line 1082 in _bootstrap_inner
+  File "/usr/lib/python3.14/threading.py", line 1044 in _bootstrap
+
+Thread 0x0000f47513f8a7a0 [python3] (most recent call first):
+  File "/usr/lib/python3.14/threading.py", line 1133 in join
+  File "/home/student1/linux-practice-8/deadlock.py", line 47 in main
+  File "/home/student1/linux-practice-8/deadlock.py", line 53 in <module>

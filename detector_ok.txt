@@ -1,0 +1,10 @@
+  2: T1 acquire R1
+  3: T2 acquire R2
+  4: T2 wait R1
+  5: T1 acquire R3
+  6: T1 release R3
+  7: T1 release R1
+  8: T2 acquire R1
+  9: T2 release R1
+ 10: T2 release R2
+Взаимоблокировок не обнаружено

@@ -1,0 +1,7 @@
+# три потока захватывают ресурсы по кругу — цикл ожидания T1 → T2 → T3 → T1
+T1 acquire R1
+T2 acquire R2
+T3 acquire R3
+T1 wait R2
+T2 wait R3
+T3 wait R1
